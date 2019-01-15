@@ -1,2 +1,0 @@
-# Spider
-Project for Spider
