@@ -1,0 +1,4 @@
+1.获取源码之后
+    a 所有内容都是包含在div class="tab-content"里
+        1 针对公告的摘要【Synopsis】、描述【Description-Security Fix(es)】、影响版本【Affected Products】、涉及的CVE【CVEs】都在div id="overview" class="tab-pane"里
+        2 针对修复所需要的包都在div id="packages" class="tab-pane active" 里

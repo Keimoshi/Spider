@@ -1,0 +1,56 @@
+[Synopsis]
+Critical: firefox security update
+
+[Description]
+Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.
+This update upgrades Firefox to version 60.4.0 ESR.
+Security Fix(es):
+ Mozilla: Memory safety bugs fixed in Firefox 64 and Firefox ESR 60.4 (CVE-2018-12405)
+ Mozilla: Memory corruption in Angle (CVE-2018-17466)
+ Mozilla: Use-after-free with select element (CVE-2018-18492)
+ Mozilla: Buffer overflow in accelerated 2D canvas with Skia (CVE-2018-18493)
+ Mozilla: Same-origin policy violation using location attribute and performance.getEntries to steal cross-origin URLs (CVE-2018-18494)
+ Mozilla: Integer overflow when calculating buffer sizes for images (CVE-2018-18498)
+For more details about the security issue(s), including the impact, a CVSS score, and other related information, refer to the CVE page(s) listed in the References section.
+Red Hat would like to thank the Mozilla project for reporting these issues. Upstream acknowledges Christian Holler, Diego Calleja, Andrew McCreight, Jon Coppeard, Natalia Csoregi, Nicolas B. Pierron, Tyson Smith, Nils, Atte Kettunen, James Lee of Kryptos Logic, and r as the original reporters.
+
+[Affected Products]
+Red Hat Enterprise Linux Server 7 x86_64
+Red Hat Enterprise Linux Server - Extended Update Support 7.6 x86_64
+Red Hat Enterprise Linux Server - AUS 7.6 x86_64
+Red Hat Enterprise Linux Workstation 7 x86_64
+Red Hat Enterprise Linux Desktop 7 x86_64
+Red Hat Enterprise Linux for IBM z Systems 7 s390x
+Red Hat Enterprise Linux for IBM z Systems - Extended Update Support 7.6 s390x
+Red Hat Enterprise Linux for Power, big endian 7 ppc64
+Red Hat Enterprise Linux for Power, big endian - Extended Update Support 7.6 ppc64
+Red Hat Enterprise Linux for Power, little endian 7 ppc64le
+Red Hat Enterprise Linux for Power, little endian - Extended Update Support 7.6 ppc64le
+Red Hat Enterprise Linux Server - TUS 7.6 x86_64
+Red Hat Enterprise Linux for ARM 64 7 aarch64
+Red Hat Enterprise Linux for Power 9 7 ppc64le
+Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions 7.6 ppc64le
+Red Hat Enterprise Linux Server - Update Services for SAP Solutions 7.6 x86_64
+Red Hat Enterprise Linux for IBM System z (Structure A) 7 s390x
+
+[Fixes]
+BZ - 1640102 - CVE-2018-17466 chromium-browser, firefox: Memory corruption in Angle
+BZ - 1658397 - CVE-2018-12405 Mozilla: Memory safety bugs fixed in Firefox 64 and Firefox ESR 60.4
+BZ - 1658399 - CVE-2018-18492 Mozilla: Use-after-free with select element
+BZ - 1658400 - CVE-2018-18493 Mozilla: Buffer overflow in accelerated 2D canvas with Skia
+BZ - 1658401 - CVE-2018-18494 Mozilla: Same-origin policy violation using location attribute and performance.getEntries to steal cross-origin URLs
+BZ - 1658402 - CVE-2018-18498 Mozilla: Integer overflow when calculating buffer sizes for images
+
+[Packages] Red Hat Enterprise Linux Server 7
+SRPM
+firefox-60.4.0-1.el7.src.rpm
+SHA-256: cd675c4a42e4f3e937c5112fce65d9bb1c33d1947e29060599533922f0432ed9
+x86_64
+firefox-60.4.0-1.el7.i686.rpm
+SHA-256: 62fe169b9efe2484dd5ba056c69412de7fea94abaa280db5ca6fcc67d5373132
+firefox-60.4.0-1.el7.x86_64.rpm
+SHA-256: cc80d898e7266776d36b151f155fbcdde4f41b5a2e58318adc579eed6f44855b
+firefox-debuginfo-60.4.0-1.el7.i686.rpm
+SHA-256: 1607e8b58e4836ebfd4744ad463974697b9ac48752b2a17b81de4c7a6672a3f3
+firefox-debuginfo-60.4.0-1.el7.x86_64.rpm
+SHA-256: f8bb852bad26bc23958b237051c92777912b318a450296d7a76c5b31806af465
