@@ -2,3 +2,13 @@
     a 所有内容都是包含在div class="tab-content"里
         1 针对公告的摘要【Synopsis】、描述【Description-Security Fix(es)】、影响版本【Affected Products】、涉及的CVE【CVEs】都在div id="overview" class="tab-pane"里
         2 针对修复所需要的包都在div id="packages" class="tab-pane active" 里
+
+
+
+
+需求：
+    1.将Redhat的公告相关内容输入到表格里，标题 内容。
+        标题：公告编号、Synopsis、Description、Affected Products、CVEs、Packages
+    2.读取表格的Package列，获取依赖的包名称，将依赖包放到update文件夹里
+
+

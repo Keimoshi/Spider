@@ -89,6 +89,7 @@ class Redhat(object):
         # Write in
         self.writein()
 
+
     def writein(self):
         fileName = self.name.replace(':', '-') + '.txt'
         content = '\n\n'.join(self.contentList).replace('\n\n\n', '\n\n')
@@ -97,9 +98,10 @@ class Redhat(object):
         print('[Success] Write in.')
 
 
+
 if __name__ == '__main__':
-    name = 'RHSA-2018:3833'
-    path = 'E:\Github\Practise\Pycharm\Patch_AutoDownload\Redhat'
+    name = 'Patch-20181228.csv'
+    path = 'F:\GitHub\Spider\Patch_AutoDownload'
     r = Redhat(name, path).getInfo()
 
 
